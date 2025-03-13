@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="basicform.css">
+</head>
+<body>
+
+    <form>
+        <h1 class="top">Please Register</h1>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <button type="submit" id="submit" onclick="sayHI()">Submit</button>
+    </form>
+
+    <script>
+        //change h1
+        //create a paragraph
+        //console log value of password
+       function sayHI() {
+        alert("You clicked this button.");
+       }
+       let button = document.getElementById("submit")
+       button.addEventListener("submit", sayHI());
+
+    </script>
+
+</body>
+</html>
