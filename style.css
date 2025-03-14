@@ -6,20 +6,17 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-}
-
-
-header {
-    padding: 20px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 35px 12%;
-    background: rgba(0, 0, 0, 0.8);
+    width: 95%;
+    padding: 15px 2%;
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
@@ -33,15 +30,13 @@ header {
     font-weight: 600;
     transition: 0.3s ease;
 }
-
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
+.logo:hover{
+    color: antiquewhite;
 }
 
-header p {
-    font-size: 1.2em;
-    color: #f5d142;
+.header h1 {
+    font-size: 20px;
+    margin: 10px;
 }
 
 .job-container {
@@ -54,20 +49,45 @@ header p {
 }
 
 span{
-    color: orangered;
+    color: rgb(255, 198, 9);
 }
 .navbar a{
     font-size: 18px;
     color: white;
     font-weight: 500;
-    margin: 0 20px;
+    margin: 20px 20px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
+    align-items: center;
 }
 .navbar a:hover,
 .navbar a.active{
-    color: orangered;
-    border-bottom: 3px solid orangered ;
+    color: rgb(101, 65, 187);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-box input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-box button:hover {
+    background: #e68900;
 }
 
 .job-card {
@@ -84,13 +104,8 @@ span{
     transform: translateY(-5px);
 }
 img{
-    width: 100px;
+    width: 150px;
     height: 100px;
-}
-
-.job-card h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
 }
 
 .job-card p {
@@ -98,7 +113,6 @@ img{
     color: #666;
 }
 
-/* Job offers button */
 button {
     background-color: #ffcc00;
     color: black;
@@ -114,15 +128,8 @@ button:hover {
     background-color: #e6b800;
 }
 
-/* Special card highlighting */
-.highlight {
-    background: #f8e2a5;
-    font-weight: bold;
-}
-
-/* Footer styling */
 footer {
-    padding: 20px;
+    padding: 10px;
 }
 
 .register-btn {

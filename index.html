@@ -8,71 +8,82 @@
 </head>
 <body>
     <header class="header">
-            <a href="#" class="logo"><span>OPY</span>DAN</a>
+            <a href="#" class="logo"><span>Work</span>Remotely</a>
             <nav class="navbar">
                 <a href="#">About Us</a>
                 <a href="#">Our Services</a>
                 <a href="#">Login</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Our Policy</a>
             </nav>
-
-            <h1>Work Remotely</h1>
-            <p>Workremotely.com</p> 
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
         </header>
 
     <main>
         <div class="job-container">
             <div class="job-card"> 
-                <img src="pexels-northwoodsmurphy-1878821.jpg" alt="">            
+                <img src="content writing.jpg" alt=""> 
+                <button>Content Writing</button>           
             </div>
             <div class="job-card"> 
-                <img src="pexels-asphotograpy-291759.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="forex trader.jpg" alt="">
+                <button>Forex Instructor</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-cottonbro-6650001.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="gym instructor.jpg" alt="">
+                <button>Gym Instructor</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-divinetechygirl-1181671.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="call center.jpg" alt="">
+                <button>Editor</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-geyonk-1152077.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="data science.jpg" alt="">
+                <button>Data Scientist</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-melvin-buezo-1253763-2529148.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="data analyst.jpg" alt="">
+                <button>Data Analyst</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-mnzoutfits-1639729.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="receptionist.jpg" alt="">
+                <button>Receptionist</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-paggiarofrancesco-2294342.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="trade instructor.jpg" alt="">
+                <button>Digital Marketer</button>
             </div>
             <div class="job-card highlight"> 
-                <img src="pexels-pixabay-128878.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="administrator.jpg" alt="">
+                <button>Admin Officer</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-solliefoto-298863.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="group call.jpg" alt="">
+                <button>Product Manager</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-tuurt-812264.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="cyber security.jpg" alt="">
+                <button>Cyber Security Expert</button>
             </div>
             <div class="job-card"> 
-                <img src="pexels-northwoodsmurphy-1878821.jpg" alt="">
-                <button>Job Offers</button>
+                <img src="call hub.jpg" alt="">
+                <button>Customer Service Agent</button>
             </div>
         </div>
     </main>
 
     <footer>
-        <button class="register-btn">Register</button>
+        <button class="register-btn" id="registerBtn">Register</button>
     </footer>
+
+    <script>
+        document.getElementById("registerBtn").addEventListener("click", function() {
+    window.location.href = "basicform.html"; // Change to the correct file path if needed
+});
+
+    </script>
 </body>
 </html>
