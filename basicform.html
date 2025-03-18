@@ -53,15 +53,34 @@
                 <p>Your date of birth is: ${birthD}</p>
                 <p>Your Email is: ${email}</p>
                 <p>Your Password is: ${passWord}</p>
+                <h3>Are your details correct?</h3>
             `;
+            let yeslink = document.createElement("a");
+            yeslink.textContent = "Yes";
+            yeslink.href = "#";
+            yeslink.onclick = function (event) {
+                event.preventDefault();
+                document.body.innerHTML = `<h1> Welcome ${firstN} ${lastN} You have successfully registered</h1>`;
+                
+            };
+            yeslink.style.backgroundColor = "white";
+            yeslink.style.padding = "10px 12px";
+            yeslink.style.textDecoration = "none";
+
+            let nolink = document.createElement("a");
+            nolink.textContent = "No";
+            nolink.href = "#";
+            nolink.onclick = function (event) {
+                event.preventDefault();
+                location.reload();
+            };
+            nolink.style.backgroundColor = "white";
+            nolink.style.padding = "10px 12px";
+            nolink.style.textDecoration = "none";
+            document.body.appendChild(yeslink);
+            document.body.appendChild(document.createTextNode(" || "));
+            document.body.appendChild(nolink);
         });
-
-    //    function sayHI() {
-    //     alert("You clicked this button.");
-    //    }
-    //    let button = document.getElementById("submit")
-    //    button.addEventListener("submit", sayHI());
-
     </script>
 
 </body>
