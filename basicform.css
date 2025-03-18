@@ -1,42 +1,94 @@
 body {
     font-family: sans-serif;
-    margin: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: #220d36;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
-form {
-    max-width: 300px;
-    /* margin: auto; */
+
+.container {
+    width: 100%;
+    max-width: 400px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
 }
+
+form {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 5px;
+    background-color: #3b2b52;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    box-sizing: border-box;
+}
+
 label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
+    color: white;
 }
-.top{
+
+.top {
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
+    color: #fdd835;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
+
 input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #fdd835; /* Yellow border */
     border-radius: 4px;
+    background-color: #ffffff; /* White background */
+    color: #000; /* Black text */
+    font-size: 16px;
+    box-sizing: border-box;
 }
+
 button {
     margin-top: 15px;
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: none;
-    background-color: #3b5774;
-    color: rgb(225, 231, 233);
+    background-color: #fdd835; /* Yellow background */
+    color: #220d36; /* Dark purple text */
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
 }
+
 button:hover {
-    background-color: #0b0c0c;
+    background-color: #ffc107; /* Lighter yellow on hover */
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px; /* Increased padding for spacing */
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .top {
+        font-size: 18px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
